@@ -30,12 +30,12 @@ public class BackCommand extends SubCommand {
 
         Location lastlocation = plugin.getLastLocationMap().get(player);
         if (lastlocation == null) {
-            player.sendMessage(ChatColor.RED + "Es gibt keine Letzte Position!");
+            player.sendMessage(ChatColor.RED + "Es gibt keine letzte Position!");
             return true;
         }
 
         player.teleport(lastlocation);
-        player.sendMessage(ChatColor.GREEN + "Du wurdest, an die letzte Position teleportieret.");
+        player.sendMessage(ChatColor.GREEN + "Du wurdest, an deine letzte Position teleportiert.");
 
         return true;
     }
